@@ -7,32 +7,35 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="style.css">
   <title>CV</title>
 </head>
 <body>
   <header  class="header">
-    <nav class="header-nav">
+    <nav class="header-nav container">
       <ul class="header-nav-list">
         <li><a href="#expirience">Experience</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contacts">Contacts</a></li>
+        <li><a href="#code">Code examples</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#lang">Languages</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="main">
-    <section class="hero">
+    <section class="hero container">
       <div class="hero-content">
         <h1 class="hero-title">Andrei Ivanou</h1>
         <span class="hero-text">Frontend Developer</span>
         <p>My goal is striving for new knowledge and improving myself as a professional.</p>
       </div>
-      <img src="/images/foto-cv.jpg" alt="Foto Ivanou Andrei" width="300" height="300">
+      <img src="images/foto-cv.jpg" alt="Foto Ivanou Andrei" width="300" height="300">
     </section>
-    <section class="experience" id="expirience">
-      <h2 class="experience-title">Experience</h2>
+    <section class="experience container" id="expirience">
+      <h2 class="experience-title section-title">Experience</h2>
       <ul class="experience-list">
         <li class="experience-item">
           <h3>Engineer</h3>
@@ -55,9 +58,9 @@
         </li>
       </ul>
     </section>
-    <div class="">
+    <div class="prof-block container">
       <section class="education" id="education">
-        <h2 class="education-title">Education</h2>
+        <h2 class="education-title section-title">Education</h2>
         <ul class="education-list">
           <li class="education-item">
             <span> Belarusian State Agricultural Academy</span>
@@ -77,20 +80,65 @@
         </ul>
       </section>
       <section class="skills" id="skills">
-        <h2 class="skills-title">Skills</h2>
+        <h2 class="skills-title section-title">Skills</h2>
         <ul class="skills-list">
           <li>HTML</li>
           <li>CSS</li>
           <li>JS</li>
           <li>Figma</li>
           <li>Git/GitHub</li>
-          <li>English: beginner</li>
         </ul>
       </section>
     </div>
-    <section class="contacts" id="contacts">
-      <h2 class="contacts-title">Contacts</h2> 
-      <ul>
+    <div class="projects-block container">
+      <section class="code" id="code">
+        <h2 class="code-title section-title">Code examples</h2>
+        <ol>
+          <li>
+            <p>
+              <code>
+                function updateLight(current) {<br>
+                  if (current=="green") {<br>
+                  return "yellow" <br>
+                } else if (current=="yellow") {<br>
+                  return "red" <br>
+                } else { <br>
+                  return "green" <br>
+                }<br>
+                }
+              </code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>
+                function simpleMultiplication(number) {<br>
+                  return number * (number % 2 > 0 ? 9 : 8);<br>
+              }
+              </code>
+            </p>
+          </li>
+        </ol>
+      </section>
+      <section class="projects" id="projects">
+        <h2 class="projects-title section-title">Projects</h2>
+          <ul>
+            <li>
+              <a href="https://anjinsan132131.github.io/rsschool-cv/">CV</a>
+            </li>
+          </ul>
+      </section>
+      <section class="lang" id="lang">
+        <h2 class="lang-title section-title">Languages</h2>
+        <ul>
+          <li>English: beginner</li>
+          <li>France: advanced</li>
+        </ul>
+      </section>
+    </div>
+    <section class="contacts container" id="contacts">
+      <h2 class="contacts-title section-title">Contacts</h2> 
+      <ul class="contacts-list">
        <li>
           <i class="fas fa-phone"></i>
           <span>+375296775880</span>
@@ -99,17 +147,25 @@
           <i class="fas fa-envelope-open-text"></i>
           <span>anjinsan132131@gmail.com</span>
         </li>
+        <li>
+          <i class="fab fa-discord"></i>
+          <span>Andrei (anjinsan132131)</span>
+        </li>
       </ul>
     </section>
   </main>
+  <footer class="footer">
+    <div class="footer-content container">
+      <div class="footer-dev">
+        <span>Created by Andrei Ivanou</span>
+        <span>2021</span>
+        <a class="footer-social-link" href="https://github.com/anjinsan132131">GitHub</a>
+      </div>
+      <a class="footer-course-link" href="https://rs.school/js/">
+        <img src="images/rs_school_js.svg" alt="rs school logo" width="80" height="40">
+      </a>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/d42fe73da4.js" crossorigin="anonymous"></script>
 </body>
-<footer class="footer">
-  <div class="footer-dev">
-    <span>©</span>
-    <span>2021</span>
-    <a href="https://github.com/anjinsan132131">github</a>
-  </div>
-  <a href="https://rs.school/js/"><img src="/images/rs_school_js.svg" alt="rs school logo" width="50" height="25"></a>
-</footer>
-<script src="https://kit.fontawesome.com/d42fe73da4.js" crossorigin="anonymous"></script>
 </html>
