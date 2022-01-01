@@ -4,9 +4,278 @@ body {
 
   font-family: "Merriweather", Arial, sans-serif;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 32px;
   font-weight: 400;
   color: #000000;
  
-  background-color: #e7e2e2;
+  background-color: #f9f9f9;
 }
+
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header {
+  padding: 20px 0 20px 0;
+  background-color: #a05161;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-nav-list a {
+  margin-left: 30px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #f3fcf9;
+  transition: 0.7s;
+}
+
+.header-nav-list a:focus,
+.header-nav-list a:hover {
+  opacity: 0.6;
+}
+
+.section-title {
+  margin: 0 0 20px 0;
+  text-align: left;
+  width: 100%;
+  font-size: 34px;
+  line-height: 38px;
+  color: #b55c6e;
+}
+
+.hero {
+  padding: 20px 0 20px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.hero-title {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 15px;
+  color: #b55c6e;
+}
+
+.hero-content span {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 15px;
+  color: #b55c6e;
+}
+
+.hero-content p {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.hero img {
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 5px #868686;
+}
+
+.experience {
+  padding: 20px 0 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  border-bottom: 2px solid #c0aca6;
+}
+
+.experience-title {
+  margin: 0 0 20px 0;
+  text-align: left;
+  width: 100%;
+  font-size: 34px;
+  line-height: 38px;
+  color: #b55c6e;
+}
+
+.experience-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+}
+
+.experience-list h3 {
+  margin: 0 0 20px 0;
+}
+
+.experience-item {
+  width: 45%;
+}
+
+.experience-item span {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.experience-resp-list li {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: italic;
+}
+
+.prof-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 20px 20px;
+  border-bottom: 2px solid #c0aca6;
+}
+
+.education,
+.skills {
+  width: 45%;
+}
+
+.education-list,
+.skills-list {
+  margin: 0;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.education-list li,
+.skills-list li {
+  margin-bottom: 20px;
+}
+
+.projects-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 20px 20px;
+  font-size: 20px;
+  border-bottom: 2px solid #c0aca6;
+}
+
+.code,
+.projects,
+.lang {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.code h2,
+.projects h2,
+.lang h2 {
+  text-align: center;
+}
+
+.code ol,
+.projects ul,
+.lang ul {
+  margin: 0;
+  padding: 0;
+}
+
+.lang li {
+  margin-bottom: 20px;
+}
+
+.projects a {
+  text-decoration: none;
+  transition: 0.7s;
+}
+
+.projects a:focus,
+.projects a:hover {
+  opacity: 0.6;
+}
+
+
+.contacts {
+  padding: 20px 0 20px 20px;
+  box-sizing: border-box;
+}
+
+.contacts-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-list li {
+  margin-bottom: 20px;
+}
+
+.contacts-list i {
+  color: #b55c6e;
+  margin-right: 10px;
+}
+
+.footer {
+  padding: 20px 0 20px 0;
+  background-color: #a05161;
+  color: #f3fcf9;
+}
+
+.footer a {
+  color: #f3fcf9;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-dev {
+  display: flex;
+  align-items: center;
+}
+
+.footer-content span {
+  margin-right: 40px;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.footer-social-link {
+  font-size: 20px;
+  line-height: 25px;
+  text-decoration: none;
+  transition: 0.7s;
+}
+
+.footer-social-link:focus,
+.footer-social-link:hover,
+.footer-course-link:focus,
+.footer-course-link:hover {
+  opacity: 0.6;
+}
+
+
+
